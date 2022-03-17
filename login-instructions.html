@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入說明 | 國立中央大學圖書館</title>
+    <style type="text/css">
+        @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap");
+        @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC', snas-serif;
+        }
+        body{      
+            background: linear-gradient(-180deg,#a8cfdb,#767bc8) fixed/*背景固定不跟著捲動固定在那邊*/ center center/*背景放正中間 X軸 Y軸*/ / 100% 100%/*背景尺寸 長寬*/;
+            background: #f8ffff;
+        }
+        /*偷懶的垂直置中*/
+        .wrap .container{
+            width: 75%;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-left: auto;
+            margin-right: auto;   
+        }
+        
+        .container h1{
+            background-color: #e7e7e7;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            color: #567396;
+            font-family: 'Verdana,Tahoma','DejaVu Sans','Microsoft JhengHei',sans-serif;
+            font-size: 20pt;
+            font-weight: 800;
+            padding: 5px 0;
+            text-align: center;
+            /*margin-right:10px;*/
+            margin-bottom: 20px;
+        }
+        .container h2{
+            text-align: left;
+            font-size: 25px;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+       
+        .container .rteleft {
+            text-align: left;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 20px;
+        }
+
+        .container img{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .container .table{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .container table tr td {
+            border-bottom: 1px solid #cecece;
+        }
+        
+        .GuideTable {
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+    
+        .GuideTable tr td {
+            padding: 5px 10px;
+        }
+    
+        .GuideTable a:link {
+            padding: 3px 3px;
+            background-color: #ff9900;
+            color: #ffffff;
+        }
+
+        .container .blue {
+            color: deepskyblue;
+            font-size: 16px;
+        }
+    
+        .container .green {
+            color: darkgreen;
+            font-size: 16px;
+        }
+    </style>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $(".headerpage").load("main-header.html");
+            $(".footerpage").load("main-footer.html");
+        });
+    </script>
+    
+</head>
+
+<body>
+    <div class="headerpage">
+    </div>
+    
+    <div class="wrap">
+        <div class="container">
+            <h1>
+                整合查詢系統登入說明
+            </h1>
+
+            <h2>
+                1.登入位置
+            </h2>
+            <center class="rteleft">
+                <span style="font-size:18px;">
+                    <strong>
+                        1-1. 電腦版 : 請先連至<a href="https://ncu.primo.exlibrisgroup.com/discovery/search?vid=886UST_NCU:886UST_NCU&lang=zh-tw" target="_balnk">雲端圖書館館藏查詢系統</a>　＞　右上角　＞　登入<br>
+                    </strong>
+                </span>
+            </center>
+            
+            <center>
+                <strong>
+                    <img src="/login_pc.png" style="border:1px solid #3a3a3a" width="55%">
+                </strong>
+            </center>
+            
+            <center class="rteleft">
+                <span style="font-size: 18px;">
+                    <strong>
+                        1-2. 手機版 : 請先連至<a href="https://ncu.primo.exlibrisgroup.com/discovery/search?vid=886UST_NCU:886UST_NCU&lang=zh-tw" target="_balnk">雲端圖書館館藏查詢系統</a>　＞　左上角　＞　登入<br>
+                    </strong>
+                </span>
+            </center>
+            
+            <center>
+                <strong>
+                    <img src="/login_mobile.png" style="border:1px solid #3a3a3a" width="55%">
+                </strong>
+            </center>
+            
+
+            <h2>
+                2.登入畫面
+            </h2>
+
+            <center>
+                <strong>
+                    <img src="/login.png" style="border:1px solid #3a3a3a" width="55%">
+                </strong>
+            </center>
+            
+            
+            <div class="table">
+                <ul>
+                    <li class="blue rteleft">
+                        <strong>
+                            <span style="font-size:18px;">
+                                A. 本校教職員工生，必須使用計中帳號密碼登入。
+                            </span>
+                        </strong>
+                    </li>
+
+                    <li class="rteleft">
+                        <strong>
+                            <span style="font-size:13px;">
+                                <a href="https://portal.ncu.edu.tw/reset-password" target="_blank">※Portal帳號忘記密碼時，請利用「Portal忘記密碼」功能，或洽詢電算中心Service Desk分機57555、57566。</a>
+                            </span>
+                        </strong>
+                    </li>
+
+                    <li class="green rteleft">
+                        <strong>
+                            <span style="font-size:18px;">
+                                B. 若無本校計中帳號密碼者，請參照下表輸入讀者證號及密碼。
+                            </span>
+                        </strong>
+                    </li>
+                </ul>
+                
+                <table class="GuideTable">
+                    <tbody>
+                        <tr style="background-color:#cecece;">
+                            <td width= "20%"><strong>類型</strong></td>
+                            <td width= "40%"><strong>證號規則</strong></td>
+                            <td width= "40%"><strong>密碼</strong></td>
+                        </tr>
+                        <tr>
+                            <td>中大校友借書證</td>
+                            <td>校友證上的學號</td>
+                            <td rowspan="3">身分證字號第1碼及末4碼，加出生月日4碼，如身分證字號為A234567890，而生日為8月18日，則密碼為A78900818。</td>
+                        </tr>
+                        <tr>
+                            <td>兼任教師、教職眷屬、退休人員、中大之友、圖書館之友、中大壢中教職、其他讀者類型</td>
+                            <td>身分證字號(ROC ID number)或居留證號(Alien Resident Certificate)的第1碼及4~9碼，如身分證字號為A234567890，帳號為A456789。</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>教師長期借閱</td>
+                            <td>個人Portal 帳號加長期流水號，如個人Portal 帳號為A456789，而長期借閱流水號為◯◯，則長期借閱帳號為A456789◯◯。</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>訪問學者、訪問學生、語言中心華語生</td>
+                            <td>無居留證號者，使用本校各單位(如國際處、語言中心)給的編號為帳號，如VT109112001。</td>
+                            <td>本校編號前5碼，加出生月日4碼，如生日為12月31日，則密碼為VT1091231。如未登錄生日者，則統一在編號前5碼後加1234，密碼VT1091234。</td>
+                        </tr>
+
+                        <tr>
+                            <td>館際合作借書證(館合證)</td>
+                            <td>館合證編號第1~4碼及6~10碼，如編號NCU4567890，則登入帳號為NCU467890。</td>
+                            <td>密碼同館合證編號</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div>
+                <center>
+                    <p><strong>有關新版整合查詢系統登入個人借閱資訊、預約及續借等相關功能，請詳見<a href="#" style="padding:3px 5px; color:#ffffff;background-color:#ff9900;" target="_blank">使用說明</a></strong></p>
+                </center>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="footerpage">
+    </div>
+</body>
+
+
+
+</html>

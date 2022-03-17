@@ -1,0 +1,79 @@
+<style>
+    .main-header{
+        background: #EDB200;
+        /*background : rgb(92, 60, 206);*/
+        box-shadow: 0 5px 5px rgba(21, 55, 91,.5);
+    }
+
+    .main-header .container{
+        display: flex;/*橫排*/
+        align-items: center;/*垂直居中*/
+        padding: 10px;
+        max-width: 1200px;
+        /*margin: auto;  */
+    }
+
+    .main-header .logo{
+        width: 14px;
+    }
+
+    .main-header .logo img{
+        width: 100%;
+        padding-top: .2em;
+        padding-bottom: .2em;
+        margin-top: auto;
+        margin-bottom: auto;
+        vertical-align: middle;
+    }
+
+    .main-header .main-nav{
+        display: flex;/*超連結是inline list*/
+        /*margin: auto;/*把剩餘的空間分配給.main-nav的左右*/
+
+    }
+
+    .main-header .main-nav a{
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 1em;
+        position: relative;
+        transform: translateY(0);
+        transition: .3s;
+    }
+
+    .main-header .main-nav a:hover{
+        transform: translateY(-5px);
+    }
+
+    .main-header .main-nav a:after{
+        content: '';
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        bottom: -5px;
+        height: 0;
+        border-bottom: 1px solid #fff;
+        transition: .3s;
+    }
+
+    .main-header .main-nav a:hover:after{
+        left: 0;
+        right: 0;
+    }
+</style>
+<div class="main-header">
+    <div class="container">
+        <span>
+            <a href="#" class="logo">
+            <img src="NCU_logo_small.gif" alt="中央大學"> 
+            </a>
+        </span>
+        <nav class="main-nav">
+            <a href="https://www.lib.ncu.edu.tw/">Library Home</a>
+            <a href="https://ncu.primo.exlibrisgroup.com/discovery/search?vid=886UST_NCU:886UST_NCU">Primo VE</a>
+            <a href="https://www.lib.ncu.edu.tw/web-office/alma-test/login-instructions.html">繁體中文</a>
+        </nav>
+    </div>
+</div>
