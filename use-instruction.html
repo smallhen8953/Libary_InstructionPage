@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>本館館藏目錄系統訊息說明</title>
+    <style type="text/css">
+        @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap");
+        @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC', snas-serif;
+        }
+        body{      
+            background: linear-gradient(-180deg,#a8cfdb,#767bc8) fixed/*背景固定不跟著捲動固定在那邊*/ center center/*背景放正中間 X軸 Y軸*/ / 100% 100%/*背景尺寸 長寬*/;
+            background: #f8ffff;
+        }
+        /*偷懶的垂直置中*/
+        .wrap .container{
+            width: 75%;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-left: auto;
+            margin-right: auto;   
+        }
+        
+        .container h1{
+            background-color: #edb20059;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            color: #567396;
+            font-family: 'Verdana,Tahoma','DejaVu Sans','Microsoft JhengHei',sans-serif;
+            font-size: 20pt;
+            font-weight: 800;
+            padding: 5px 0;
+            text-align: center;
+            /*margin-right:10px;*/
+            margin-bottom: 20px;
+        }
+        .container h2{
+            text-align: left;
+            font-size: 25px;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+       
+        .container .rteleft {
+            text-align: left;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 20px;
+        }
+
+        .container img{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .container .table{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .container table tr td {
+            border-bottom: 1px solid #cecece;
+        }
+        
+        .GuideTable {
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+    
+        .GuideTable tr td {
+            padding: 5px 10px;
+        }
+    
+        .GuideTable a:link {
+            padding: 3px 3px;
+            background-color: #ff9900;
+            color: #ffffff;
+        }
+
+        .container .blue {
+            color: deepskyblue;
+            font-size: 16px;
+        }
+    
+        .container .green {
+            color: darkgreen;
+            font-size: 16px;
+        }
+    </style>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $(".headerpage").load("main-header.html");
+        });
+    </script>
+    
+</head>
+
+<body>
+    <div class="headerpage">
+    </div>
+    
+    <div class="wrap">
+        <div class="container">
+            <h1>
+                本館館藏目錄系統訊息說明
+            </h1>
+
+            <h3 align="center">
+                <a href ="" style="color:#EDB200;">館藏地</a> |
+                <a href ="" style="color:#EDB200;">處理狀態</a> |
+                <a href ="" style="color:#EDB200;">查詢欄位</a> |
+                <a href ="" style="color:#EDB200;">常用功能</a> |
+                <a href ="" style="color:#EDB200;">個人借閱狀況</a>
+            </h3>
+            
+            <br>
+            
+            <div class="table">
+                <table class="GuideTable">
+                    <tbody>
+                        <tr>
+                            <td style="background-color:#edb2007a"><strong>館藏目錄上的資料沒有館藏地、索書號及狀態?</strong></td>
+                            <td>訂購中或是編目中的圖書，因書尚未到館或尚未完成編目，不會顯示館藏地、索書號及狀態等館藏記錄。一旦編目完成，便會加上館藏地、索書號及狀態等資料。若急需該資料，可至圖書館網站填寫圖書急編，館員將在採購入館後優先處理該資料並通知該讀者優先借閱，部分訂購中資料為讀者推薦資料，將保留給薦購者優先借閱。</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#edb2007a"><strong>本已訂購為總圖書館在mm-dd-yyyy.</strong></td>
+                            <td>書目資料中出現此訊息，代表圖書館已於日期mm-dd-yyyy訂購。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <br>
+            
+            <div class="table">
+                <table class="GuideTable">
+                    <tbody>
+                        <tr style="background-color:#edb2007a;">
+                            <td width= "25%"><strong>館藏地</strong></td>
+                            <td width= "75%"><strong>說明</strong></td>
+                        </tr>
+                        <tr>
+                            <td>總圖 1F 新書展示區</td>
+                            <td>圖書館近幾個月的新進館藏，在主題書展區旁展示書架。</td>
+                        </tr>
+                        <tr>
+                            <td>總圖 1F 主題書展區</td>
+                            <td>圖書館正舉辦的書展活動，在新書展示區前方。在大門入口的正前方。</td>
+                        </tr>
+                        <tr>
+                            <td>總圖 1F 流通櫃台</td>
+                            <td>部分資料（含光碟片、部分地圖及書之附件等）標示為1樓流通櫃台，逕洽櫃台人員辦理借閱手續。</td>
+                        </tr>
+                        <tr>
+                            <td>總圖 1F 指定資料區</td>
+                            <td>主題書展旁第一座木櫃</td>
+                        </tr>
+                        <tr>
+                            <td>總圖 1F 微縮資料區</td>
+                            <td>電子資源檢索區</td>
+                        </tr>
+                        <tr>
+                            <td>總圖 1F 教職員著作區</td>
+                            <td>現期期刊區旁</td>
+                        </tr>
+                        <tr>
+                            <td>總圖 2F 科普圖書</td>
+                            <td>在2F靠近電梯的靠牆書架集中放置，可供外借。</td>
+                        </tr>
+                        <tr>
+                            <td>總圖 1F 參考服務台</td>
+                            <td>參考資訊櫃台，存放參考書及期刊附件、光碟資料、密地圖</td>
+                        </tr>
+                        <tr>
+                            <td>總圖 1F 參考書區</td>
+                            <td>所有參考資料皆放置在1樓。</td>
+                        </tr>
+                        <tr>
+                            <td>總圖 2-4F 中文書庫</td>
+                            <td>東方語系圖書（含中、日、韓文等）
+                                2樓分類號：857.7-999.999
+                         　     3樓分類號：000-544.999
+                         　     4樓分類號：545-857.699
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>總圖 5-6F 西文書庫</td>
+                            <td>西方語系圖書（含英、法、德文等）
+                                5樓分類號：A-PQ
+                                6樓分類號：PR-Z
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>總圖 3F 余英時專區</td>
+                            <td>在3樓，樓梯左側之旋轉書架上。</td>
+                        </tr>
+                        <tr>
+                            <td>總圖 3F 客家圖書專區</td>
+                            <td>以客家研究為主題的資料區。在3樓樓梯後方的書架成一區。</td>
+                        </tr>
+                        <tr>
+                            <td>總圖 5F 校友贈書特藏室</td>
+                            <td>在5樓，樓梯後方的研究小間501室成一區。</td>
+                        </tr>
+                        <tr>
+                            <td>總 R401 珍善本線裝書區</td>
+                            <td>在4樓，樓梯後的研究小間401室，採閉架管理，不外借，如需內閱請逕洽櫃台人員。</td>
+                        </tr>
+                        <tr>
+                            <td>中正圖書館 2F 視聽室</td>
+                            <td>放置所有視聽資料，另設有英語自學中心</td>
+                        </tr>
+                        <tr>
+                            <td>國鼎圖書館</td>
+                            <td>在國鼎分館圖書室地下室的密集書庫。</td>
+                        </tr>
+                        <tr>
+                            <td>國鼎圖書館 B1 報紙合訂區</td>
+                            <td>中西文報紙合訂本置於國鼎分館擴增的地下室下室密集書庫中，進入書庫直走到底再右轉進入，進入擴建書庫後先左轉再右轉。</td>
+                        </tr>
+                        <tr>
+                            <td>國科會長期計畫用書</td>
+                            <td>計畫經費購買資料，提供老師長期借用，若有該書需求，可至圖書館網頁填寫「圖書薦購」，若薦購後經審核同意購買，可優先借閱。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <br>
+            
+            <div class="table">
+                <table class="GuideTable">
+                    <tbody>
+                        <tr>
+                            <td style="background-color:#edb2007a" width= "25%"><strong>處理狀態</strong></td>
+                            <td style="background-color:#edb2007a" width= "75%"><strong>意義</strong></td>
+                        </tr>
+                        <tr>
+                            <td>可借閱</td>
+                            <td>可至書架取閱或外借。</td>
+                        </tr>
+                        <tr>
+                            <td>上架中</td>
+                            <td>讀者還書後在一定時間內，本館館藏目錄均會顯示「上架中」，它可能在圖書館的流通櫃台或已在書庫，您可以先至書庫找找看，或至流通櫃台尋求館員的協助。</td>
+                        </tr>
+                        <tr>
+                            <td>破損</td>
+                            <td>圖書受損嚴重，已無法外借。</td>
+                        </tr>
+                        <tr>
+                            <td>圖書報廢中</td>
+                            <td>圖書版本過舊或已破損嚴重，館方正報廢中。</td>
+                        </tr>
+                        <tr>
+                            <td>保留推薦或急編</td>
+                            <td>為讀者薦購圖書或圖書急編圖書，會優先保留給該讀者借閱。</td>
+                        </tr>
+                        <tr>
+                            <td>編目處理中待印書標</td>
+                            <td>圖書正在採編組處理中，尚未送到典藏/閱覽區。若急需，可至圖書館網站填寫圖書急編，館員將在三日內處理完畢並優先保留給該讀者借閱。</td>
+                        </tr>
+                        <tr>
+                            <td>限計畫使用</td>
+                            <td>國科會計畫用書，限計畫老師使用，若有需求，可至圖書館網頁填寫「圖書薦購」，若薦購後經審核同意購買，可優先借閱。</td>
+                        </tr>
+                        <tr>
+                            <td>禁止閱覽</td>
+                            <td>作者不授權開放使用，如本校博碩士論文。</td>
+                        </tr>
+                        <tr>
+                            <td>遺失 暫時遺失</td>
+                            <td>圖書目前無法尋獲，恐遺失。若有需求，可至圖書館網頁填寫「圖書薦購」，若薦購後經審核同意購買，可優先借閱。</td>
+                        </tr>
+                        <tr>
+                            <td>限館內使用</td>
+                            <td>部分參考工具書(如字辭典等)等類型的資料，不可外借，僅限於圖書館內閱覽使用。</td>
+                        </tr>
+                        <tr>
+                            <td>限當日館內使用</td>
+                            <td>當期語文性雜誌、畢業紀念冊及考古題等限當日館內以小時借用，不得攜出館外。</td>
+                        </tr>
+                        <tr>
+                            <td>限時(隔夜)借閱</td>
+                            <td>教師指定資料、本校博碩士論文、單張地圖等限當日館內以小時借用，並可於借還書作業結束前(2)數小時內隔夜外借至館外，隔日一早開館後2小時內歸還。</td>
+                        </tr>
+                        <tr>
+                            <td>在預約架上</td>
+                            <td>在總圖1F流通櫃台處或中正圖書館2樓視聽室櫃台，正等待預約者到流通櫃台取書辦理借閱手續，若有需求，可線上預約。若該書於保留期限內未辦理借出，或借出又歸還了，則將依預約先後順序通知預約者前來借閱。</td>
+                        </tr>
+                        <tr>
+                            <td>到期 mm-dd-yy：</td>
+                            <td>該書已經外借，到期日是mm-dd-yy，例如：07-11-08，到期日是2008年7月11日。</td>
+                        </tr>
+                        <tr>
+                            <td>到期 mm-dd-yy +1 預約：</td>
+                            <td>該書已經外借，到期日是mm-dd-yy，有1人預約。若是有2人預約，則會出現+2預約。</td>
+                        </tr>
+                        <tr>
+                            <td>到期 mm-dd-yy +1 RECALLED：</td>
+                            <td>該書已經外借，到期日是mm-dd-yy，有1人預約，而且系統已經發出催還。若是有2人預約，則會出現+2 RECALLED。</td>
+                        </tr>
+                        <tr>
+                            <td>在預約架上 +3 預約</td>
+                            <td>該書在流通櫃台預約架上，正等預約者到館取書借閱，另外還有3人預約等候。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> 
+            <div class="table">
+                <table class="GuideTable">
+                    <tbody>
+                        <tr>
+                            <td style="background-color:#edb2007a" width= "25%"><strong>查詢欄位</strong></td>
+                            <td style="background-color:#edb2007a" width= "75%"><strong>欄位說明</strong></td>
+                        </tr>
+                        <tr>
+                            <td>書名/刊名</td>
+                            <td>查詢圖書、期刊、報紙或圖書的叢書名等。</td>
+                        </tr>
+                        <tr>
+                            <td>作者/編者/譯者</td>
+                            <td>查詢圖書的作者/編者或譯者，含論文的作者及本校的指導教授。</td>
+                        </tr>
+                        <tr>
+                            <td>主題</td>
+                            <td>每一本書都會有屬於自己的主題，讀者可根據您要查詢的主題輸入，系統會查詢出相近或是相同的主題。或找到相近資料後，參考該資料的主題繼續檢索，可找到更多相關的資料。</td>
+                        </tr>
+                        <tr>
+                            <td>關鍵字</td>
+                            <td>利用關鍵字檢索可以擴大查詢範圍。</td>
+                        </tr>
+                        <tr>
+                            <td>索書號-
+                                中國圖書分類</br>
+                                索書號-
+                                美國國會分類號</td>
+                            <td><font color="red">索書號就是到書架取書的號碼</font>
+                                </br>
+                                中文書(泛指中文，日文，韓文...等東方語系書籍)的索書號，採用的是賴永祥先生編訂的中國圖書分類號，西文書(泛指英文,法文,德文...等西方語系書籍)採用的是美國國會分類號。
+                                </br>
+                                中文書例：310.1 3442 95  西文書例：HD53 B64 2007 
+                                </br>
+                                類號簡表：中國圖書分類號；美國國會分類號</td>
+                        </tr>
+                        <tr>
+                            <td>國際標準書號ISSN/ISBN</td>
+                            <td>包含了圖書(ISBN)及期刊(ISSN)，每本書或期刊都會有獨有的號碼。
+                                例：9571345555、957-134-555-5或9789573323570</td>
+                        </tr>
+                        <tr>
+                            <td>指參-授課老師
+                                指參-課程名稱</td>
+                            <td>是授課老師指定閱讀的讀物，依據課程名稱或教師姓名，即可查到老師所指定的資料。
+                                教師例：巫佩蓉；課程例：亞洲藝術</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table">
+                <table class="GuideTable">
+                    <tbody>
+                        <tr>
+                            <td style="background-color:#edb2007a" width= "25%"><strong>常用功能</strong></td>
+                            <td style="background-color:#edb2007a" width= "75%"><strong>說明</strong></td>
+                        </tr>
+                        <tr>
+                            <td>詳細顯示</td>
+                            <td>除了書名之外，可看較詳細之作者、索書號、館藏地、可流通或已外借等資料。</td>
+                        </tr>
+                        <tr>
+                            <td>縮小範圍查詢</td>
+                            <td>若是查詢結果筆數很多，可縮小查詢範圍。條件如下：
+                                出版年(之前或之後)、語文(英文,法文,德文,日文...等)、
+                                資料類型（縮影資料,錄音資料,電腦檔,博碩士論文,網路電子資源....等）
+                                館藏地（總圖、中正圖書館視聽室、國鼎圖書館、鴻經館數學系圖書室等）、出版者、書名關鍵字、作者關鍵字、主題關鍵字。</td>
+                        </tr>
+                        <tr>
+                            <td>轉關鍵字查詢</td>
+                            <td>若是原來的詞彙查詢結果筆數很少，可以利用[轉關鍵字查詢]擴大查詢範圍。</td>
+                        </tr>
+                        <tr>
+                            <td>查詢其他</td>
+                            <td>可查詢相同檢索欄位之館藏，例如：書名欄位、作者欄位。</td>
+                        </tr>
+                        <tr>
+                            <td>重新查詢</td>
+                            <td>回到館藏目錄查詢頁面，可切換其他檢索欄位。</td>
+                        </tr>
+                        <tr>
+                            <td>預約</td>
+                            <td>當所要的資料已外借，可以輸入帳號及個人密碼(PIN Personal Identify Number)，執行預約。圖書館會在讀者歸還後以email發出預約取書通知單給預約者，並在預約架保留4天(視聽室資料保留2天)，若期限內預約者未取書，圖書館將通知下一個預約者或上架到書庫。</td>
+                        </tr>
+                        <tr>
+                            <td>儲存/轉出</td>
+                            <td>將查詢的結果儲存註記起來。</td>
+                        </tr>
+                        <tr>
+                            <td>檢視已存記錄</td>
+                            <td>檢視已儲存的紀錄清單，可執行多本圖書一併預約，或將書目email到自己的信箱。</td>
+                        </tr>
+                        <tr>
+                            <td>機讀格式顯示</td>
+                            <td>這是檢視書目紀錄的機讀編目格式。</td>
+                        </tr>
+                        <tr>
+                            <td>回檢索結果</td>
+                            <td>當檢視某一筆資料時，可點[回檢索結果]回到瀏覽之頁面。</td>
+                        </tr>
+                        <tr>
+                            <td>相關資源</td>
+                            <td>點選[相關資源]系統可自動利用書名，作者等檢索點查詢Google,奇摩等網路資源,或是EBSCOhost,ProQuest,SDOS等資料庫。</td>
+                        </tr>
+                        <tr>
+                            <td>檢視其他複本或查詢一特定冊/本</td>
+                            <td>該書目資料下有超過10筆以上的館藏資料，點選［檢視其他複本或查詢一特定冊/本］可看更多館藏資料。</td>
+                        </tr>
+                        <tr>
+                            <td>一般顯示</td>
+                            <td>從更多館藏資料顯示或［點收箱顯示］回到書目資料顯示。</td>
+                        </tr>
+                        <tr>
+                            <td>表格顯示</td>
+                            <td>期刊已到館卷期表格顯示。</td>
+                        </tr>
+                        <tr>
+                            <td>行列顯示</td>
+                            <td>期刊已到館卷期按列顯示。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="footerpage">
+    </div>
+</body>
+
+
+
+</html>
