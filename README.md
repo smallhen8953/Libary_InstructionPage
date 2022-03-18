@@ -8,6 +8,6 @@ Helped NCU libary lauching new libary collection system, upgrade and optimize ol
 
 With Mandarin page and English page.
 
-cat-mes.htm為舊版頁面，可作為新版頁面之對比。
+cat-mes.htm為舊版頁面，可作為use-instruction.html新版頁面之對比。
 
 cat-mes.htm is the old version webpage, could be a comparison with the new ones.
